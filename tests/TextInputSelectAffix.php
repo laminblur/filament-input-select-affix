@@ -1,5 +1,6 @@
 <?php
 
+use Filament\Forms\ComponentContainer;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Form;
 use Illuminate\Support\Str;
@@ -10,9 +11,9 @@ function createField(string $name, ?Closure $configure = null): TextInputSelectA
 {
     $livewire = Livewire::make();
 
-    if (class_exists(\Filament\Forms\ComponentContainer::class)) {
+    if (class_exists(ComponentContainer::class)) {
         $field = (new TextInputSelectAffix($name))
-            ->container(\Filament\Forms\ComponentContainer::make($livewire));
+            ->container(ComponentContainer::make($livewire));
     } else {
         Form::make($livewire)
             ->schema([

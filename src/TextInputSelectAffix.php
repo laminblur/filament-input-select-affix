@@ -3,10 +3,10 @@
 namespace Marvinosswald\FilamentInputSelectAffix;
 
 use Closure;
-use Filament\Schemas\Schema;
-use RuntimeException;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Schema;
+use RuntimeException;
 
 class TextInputSelectAffix extends TextInput
 {
