@@ -2,6 +2,13 @@
 
 All notable changes to `filament-input-select-affix` will be documented in this file.
 
+## 0.4.0 - 2026-06-25
+
+### What's Changed
+
+* Filament v5 support
+* Laravel 13 support
+
 ## 0.3.0 - 2025-04-12
 
 Laravel 12 compatibility thanks to @laravel-shift ( and [KarelBrijs](https://github.com/KarelBrijs) for making me notice the PR)
